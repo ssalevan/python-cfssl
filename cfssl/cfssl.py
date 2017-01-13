@@ -45,7 +45,7 @@ class CFSSL(object):
         """
         data = self._clean_mapping({
             'token': token,
-            'request': request.to_api(),
+            'request': request,
             'datetime': datetime,
             'remote_address': remote_address,
         })
